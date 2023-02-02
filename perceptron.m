@@ -90,3 +90,20 @@ function PlotPats(Patterns,Desired)
     title('Training Set') % The title function adds a title to the plot.
     hold off % The hold off function releases the current plot so that it can be modified.
 end
+
+% Plot the decision boundary of the Perceptron.
+function PlotBoundary(Weights,i,final)
+    % Plot the decision boundary of the Perceptron.
+    x = [-1 1]; % The x vector stores the x-coordinates of the points that define the decision boundary.
+    y = -(Weights(1) + Weights(2)*x)/Weights(3); % The y vector stores the y-coordinates of the points that define the decision boundary.
+    if final == 0 % If the decision boundary is not the final decision boundary, it is plotted in red.
+        plot(x,y,'r') % The plot function plots the decision boundary in red.
+    else % If the decision boundary is the final decision boundary, it is plotted in black.
+        plot(x,y,'k') % The plot function plots the decision boundary in black.
+    end
+    axis([-1 1 -1 1]) % The axis function sets the axis limits of the plot.
+    grid on % The grid on function adds a grid to the plot.
+    xlabel('x_1') % The xlabel function adds a label to the x-axis.
+    ylabel('x_2') % The ylabel function adds a label to the y-axis.
+    title(['Decision Boundary after ',num2str(i),' Iterations']) % The title function adds a title to the plot.
+end
