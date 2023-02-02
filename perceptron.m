@@ -67,3 +67,8 @@ end
 
 % Plot the final decision boundary of the Perceptron.
 PlotBoundary(Weights,i,1) % The PlotBoundary function is called one more time to plot the final decision boundary of the Perceptron.
+
+% Plot the target function.
+x = [-1 1]; % The x vector stores the x-coordinates of the points that define the target function.
+y = slope*x + yint; % The y vector stores the y-coordinates of the points that define the target function.
+plot(x,y,'k') % The plot function plots the target function in black.
