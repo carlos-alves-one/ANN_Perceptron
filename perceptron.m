@@ -45,3 +45,6 @@ Weights = [0 0 0]; % The Weights vector stores the weights of the Perceptron and
 
 % Train the Perceptron.
 for i = 1:50 % The loop runs 50 times or until convergence, whichever comes first.
+
+    % Compute the output of the Perceptron.
+    Result = (Weights * Inputs) > 0; % The Perceptron computes the output by multiplying the weights with the inputs and thresholding the result.
