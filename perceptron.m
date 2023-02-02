@@ -39,3 +39,6 @@ PlotPats(Patterns,Desired) % The PlotPats function plots the training set with c
 
 % Store the inputs to the Perceptron.
 Inputs = [ones(1,NPATS); Patterns]; % The Inputs matrix stores the inputs to the Perceptron. It includes a row of ones to account for the bias term.
+
+% Initialize the weights of the Perceptron.
+Weights = [0 0 0]; % The Weights vector stores the weights of the Perceptron and is initialized to [0 0 0].
