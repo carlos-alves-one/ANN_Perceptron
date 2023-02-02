@@ -42,3 +42,6 @@ Inputs = [ones(1,NPATS); Patterns]; % The Inputs matrix stores the inputs to the
 
 % Initialize the weights of the Perceptron.
 Weights = [0 0 0]; % The Weights vector stores the weights of the Perceptron and is initialized to [0 0 0].
+
+% Train the Perceptron.
+for i = 1:50 % The loop runs 50 times or until convergence, whichever comes first.
