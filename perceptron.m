@@ -62,3 +62,8 @@ for i = 1:50 % The loop runs 50 times or until convergence, whichever comes firs
     % Plot the decision boundary of the Perceptron.
     PlotBoundary(Weights,i,0) % The PlotBoundary function plots the decision boundary of the Perceptron in the 2-dimensional input space.
     pause(1) % The pause function adds a delay of 1 second to allow for visual inspection of the decision boundary after each iteration.
+
+end
+
+% Plot the final decision boundary of the Perceptron.
+PlotBoundary(Weights,i,1) % The PlotBoundary function is called one more time to plot the final decision boundary of the Perceptron.
