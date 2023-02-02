@@ -72,3 +72,7 @@ PlotBoundary(Weights,i,1) % The PlotBoundary function is called one more time to
 x = [-1 1]; % The x vector stores the x-coordinates of the points that define the target function.
 y = slope*x + yint; % The y vector stores the y-coordinates of the points that define the target function.
 plot(x,y,'k') % The plot function plots the target function in black.
+
+% Output the final weights.
+fprintf('Final Weights = ');
+disp(Weights); % The fprintf statement outputs the final weights to the console.
