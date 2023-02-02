@@ -51,3 +51,6 @@ for i = 1:50 % The loop runs 50 times or until convergence, whichever comes firs
 
     % Check for convergence.
     if Result == Desired, break, end % If the output matches the desired output, the loop terminates.
+
+    % Update the weights of the Perceptron.
+    Weights = Weights + (Desired-Result) * Inputs'; % If the output does not match the desired output, the weights are updated using the update rule.
