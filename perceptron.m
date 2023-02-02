@@ -48,3 +48,6 @@ for i = 1:50 % The loop runs 50 times or until convergence, whichever comes firs
 
     % Compute the output of the Perceptron.
     Result = (Weights * Inputs) > 0; % The Perceptron computes the output by multiplying the weights with the inputs and thresholding the result.
+
+    % Check for convergence.
+    if Result == Desired, break, end % If the output matches the desired output, the loop terminates.
