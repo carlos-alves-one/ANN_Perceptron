@@ -28,3 +28,5 @@ Patterns = rand(2,NPATS)*2-1; % The values of the training examples are randomly
 
 % Determine the target function of the training set.
 slope = log(rand(1)*10); % The slope of the target function is randomly generated between 0 and 10.
+
+yint = rand(1)*2-1; % The y-intercept of the target function is randomly generated between -1 and 1.
