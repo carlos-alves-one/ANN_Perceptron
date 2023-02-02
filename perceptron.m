@@ -23,4 +23,5 @@
 % Calculate the number of training examples in the training set.
 NPATS = 10 + floor(rand(1)*30); % The number of training examples is randomly generated between 10 and 39.
 
-
+% Generate the 2-dimensional training examples.
+Patterns = rand(2,NPATS)*2-1; % The values of the training examples are randomly generated between -1 and 1.
