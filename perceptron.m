@@ -33,3 +33,6 @@ yint = rand(1)*2-1; % The y-intercept of the target function is randomly generat
 
 % Determine the desired output of the Perceptron.
 Desired = Patterns(2,:) - Patterns(1,:)*slope - yint > 0; % The desired output is set to 1 if the point is above the target function and 0 otherwise.
+
+% Plot the training set.
+PlotPats(Patterns,Desired) % The PlotPats function plots the training set with colored markers to indicate the class of each example.
