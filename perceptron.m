@@ -76,3 +76,17 @@ plot(x,y,'k') % The plot function plots the target function in black.
 % Output the final weights.
 fprintf('Final Weights = ');
 disp(Weights); % The fprintf statement outputs the final weights to the console.
+
+% Plot the training set.
+function PlotPats(Patterns,Desired)
+    % Plot the training set.
+    plot(Patterns(1,Desired==1),Patterns(2,Desired==1),'ro') % The plot function plots the training examples with class label 1 in red.
+    hold on % The hold on function holds the current plot so that the next plot is added to it.
+    plot(Patterns(1,Desired==0),Patterns(2,Desired==0),'bo') % The plot function plots the training examples with class label 0 in blue.
+    axis([-1 1 -1 1]) % The axis function sets the axis limits of the plot.
+    grid on % The grid on function adds a grid to the plot.
+    xlabel('x_1') % The xlabel function adds a label to the x-axis.
+    ylabel('x_2') % The ylabel function adds a label to the y-axis.
+    title('Training Set') % The title function adds a title to the plot.
+    hold off % The hold off function releases the current plot so that it can be modified.
+end
