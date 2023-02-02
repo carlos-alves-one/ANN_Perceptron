@@ -54,3 +54,7 @@ for i = 1:50 % The loop runs 50 times or until convergence, whichever comes firs
 
     % Update the weights of the Perceptron.
     Weights = Weights + (Desired-Result) * Inputs'; % If the output does not match the desired output, the weights are updated using the update rule.
+
+    % Output the iteration number and the current weights.
+    fprintf('%2d. Weights = ',i);
+    disp(Weights); % The fprintf statement outputs the iteration number and the current weights to the console.
