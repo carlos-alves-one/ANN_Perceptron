@@ -18,4 +18,9 @@
 % The code uses several helper functions, such as PlotPats and PlotBoundary, that are not included in this code snippet. 
 % These functions are used to plot the training set and the decision boundary of the Perceptron, respectively.
 
+% perceptron - Perceptron demo with random training set.
+
+% Calculate the number of training examples in the training set.
+NPATS = 10 + floor(rand(1)*30); % The number of training examples is randomly generated between 10 and 39.
+
 
