@@ -36,3 +36,6 @@ Desired = Patterns(2,:) - Patterns(1,:)*slope - yint > 0; % The desired output i
 
 % Plot the training set.
 PlotPats(Patterns,Desired) % The PlotPats function plots the training set with colored markers to indicate the class of each example.
+
+% Store the inputs to the Perceptron.
+Inputs = [ones(1,NPATS); Patterns]; % The Inputs matrix stores the inputs to the Perceptron. It includes a row of ones to account for the bias term.
